@@ -30,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to your personal email
     const emailResponse = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>", // Using Resend's verified domain
-      to: ["almamolna664@gmail.com"],
+      to: ["almamoha664@gmail.com"],
       reply_to: email, // This allows you to reply directly to the sender
       subject: `Portfolio Contact: ${subject}`,
       html: `
