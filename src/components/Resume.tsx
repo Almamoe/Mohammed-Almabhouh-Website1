@@ -74,7 +74,7 @@ export function Resume() {
                 <div>
                   <h4 className="font-mono font-bold text-sm">Software Developer</h4>
                   <p className="text-xs text-muted-foreground">Ameerz-Agent Proxy</p>
-                  <p className="text-xs text-accent">Sept 2024 - Present</p>
+                  <p className="text-xs text-accent">Sept 2024 - March 2025</p>
                 </div>
                 <div>
                   <h4 className="font-mono font-bold text-sm">Web Design Coop</h4>
