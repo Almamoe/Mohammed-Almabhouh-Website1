@@ -108,7 +108,7 @@ export function Projects() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-bold font-mono mb-2">Software Developer</h4>
-              <p className="text-muted-foreground text-sm mb-2">Ameerz-Agent Proxy | Sept 2024 - Present</p>
+              <p className="text-muted-foreground text-sm mb-2">Ameerz-Agent Proxy | Sept 2024 - March 2025</p>
               <p className="text-sm leading-relaxed">
                 Developing interactive driving course platform, implementing security features, 
                 and conducting comprehensive assessments for enhanced system reliability.
