@@ -102,17 +102,6 @@ export function Projects() {
                     CODE
                   </a>
                 )}
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-3 py-2 bg-accent text-accent-foreground font-mono text-sm border border-accent hover:bg-background hover:text-accent transition-colors"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    DEMO
-                  </a>
-                )}
               </div>
             </div>
           ))}
