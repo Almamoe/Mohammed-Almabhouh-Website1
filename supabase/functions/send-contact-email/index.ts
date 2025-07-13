@@ -29,9 +29,10 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to your personal email
     const emailResponse = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+      from: "Portfolio Contact <onboarding@resend.dev>", // Using Resend's verified domain
       to: ["almamolna664@gmail.com"],
-      subject: `Contact Form: ${subject}`,
+      reply_to: email, // This allows you to reply directly to the sender
+      subject: `Portfolio Contact: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333; border-bottom: 2px solid #007acc; padding-bottom: 10px;">
@@ -60,7 +61,7 @@ const handler = async (req: Request): Promise<Response> => {
       `,
     });
 
-    console.log("Email sent successfully:", emailResponse);
+    console.log("Email sent successfully:", JSON.stringify(emailResponse, null, 2));
 
     return new Response(JSON.stringify({ 
       success: true, 
