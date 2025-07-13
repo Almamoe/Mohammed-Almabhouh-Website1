@@ -1,11 +1,4 @@
-import { Coffee, Code, Heart, Zap } from "lucide-react";
 
-const stats = [
-  { label: "Years in Program", value: "2+", icon: Code },
-  { label: "Projects Built", value: "10+", icon: Zap },
-  { label: "Cups of Coffee", value: "∞", icon: Coffee },
-  { label: "Lines of Code", value: "50K+", icon: Heart }
-];
 
 export function About() {
   return (
@@ -92,20 +85,6 @@ export function About() {
                 My passion lies in machine learning, computer vision, and building secure, intelligent applications. 
                 I'm particularly interested in autonomous vehicle systems and developing innovative solutions for real-world challenges.
               </p>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              {stats.map((stat, index) => (
-                <div
-                  key={stat.label}
-                  className="pixel-card p-4 text-center bg-card group hover:-translate-y-1 transition-transform"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <stat.icon className="h-8 w-8 text-primary mx-auto mb-2 group-hover:text-accent transition-colors" />
-                  <div className="text-2xl font-bold font-mono text-primary">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground font-mono">{stat.label}</div>
-                </div>
-              ))}
             </div>
             
             <div className="pixel-card p-6 bg-card">
