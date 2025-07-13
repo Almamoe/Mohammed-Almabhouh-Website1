@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Shield, Camera, Car, Lock } from "lucide-react";
+import { ExternalLink, Github, Shield, Camera, Car, Gamepad2 } from "lucide-react";
 
 const projects = [
   {
@@ -6,7 +6,16 @@ const projects = [
     description: "Secure password management system using AES-256 encryption with PBKDF2-HMAC. Features intuitive GUI with Tkinter, robust SQLite database schema, and encrypted backup functionality.",
     tech: ["Python", "AES-256", "PBKDF2", "SQLite", "Tkinter"],
     icon: Shield,
-    github: "#",
+    github: "https://github.com/Almamoe/PasswordVault_Demo",
+    demo: "#",
+    status: "COMPLETED"
+  },
+  {
+    title: "Granny Game",
+    description: "Interactive gaming experience with engaging gameplay mechanics. Built with modern web technologies for an immersive user experience.",
+    tech: ["JavaScript", "HTML", "CSS", "Game Development"],
+    icon: Gamepad2,
+    github: "https://github.com/AlexandraLHeureuxECE/final-project-rambo-group",
     demo: "#",
     status: "COMPLETED"
   },
@@ -15,8 +24,8 @@ const projects = [
     description: "OCR-powered translator for visually impaired users using Tesseract and Raspberry Pi. Real-time text-to-speech conversion with custom camera stands for optimal OCR performance.",
     tech: ["Python", "Node.js", "OCR", "Raspberry Pi", "Onshape"],
     icon: Camera,
-    github: "#",
-    demo: "#",
+    github: null,
+    demo: null,
     status: "DEPLOYED"
   },
   {
@@ -27,15 +36,6 @@ const projects = [
     github: "#",
     demo: "#",
     status: "ACTIVE"
-  },
-  {
-    title: "Interactive Driving Course",
-    description: "Team project developing an educational platform for road safety. Designed interactive features to reduce accidents and improve road safety for tourism and local drivers.",
-    tech: ["Java", "HTML", "JavaScript", "Team Collaboration"],
-    icon: Lock,
-    github: "#",
-    demo: "#",
-    status: "COMPLETED"
   }
 ];
 
@@ -91,20 +91,28 @@ export function Projects() {
               </div>
               
               <div className="flex gap-3">
-                <a
-                  href={project.github}
-                  className="flex items-center gap-2 px-3 py-2 bg-foreground text-background font-mono text-sm border border-foreground hover:bg-background hover:text-foreground transition-colors"
-                >
-                  <Github className="h-4 w-4" />
-                  CODE
-                </a>
-                <a
-                  href={project.demo}
-                  className="flex items-center gap-2 px-3 py-2 bg-accent text-accent-foreground font-mono text-sm border border-accent hover:bg-background hover:text-accent transition-colors"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  DEMO
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-2 bg-foreground text-background font-mono text-sm border border-foreground hover:bg-background hover:text-foreground transition-colors"
+                  >
+                    <Github className="h-4 w-4" />
+                    CODE
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-2 bg-accent text-accent-foreground font-mono text-sm border border-accent hover:bg-background hover:text-accent transition-colors"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    DEMO
+                  </a>
+                )}
               </div>
             </div>
           ))}
