@@ -86,36 +86,6 @@ export function Skills() {
             </div>
           ))}
         </div>
-        
-        {/* Experience bar */}
-        <div className="mt-16 pixel-card p-6 bg-card">
-          <h3 className="text-2xl font-bold font-mono mb-6 text-center">
-            <span className="terminal-text">EXPERIENCE_LEVEL</span>
-          </h3>
-          
-          <div className="space-y-4">
-            {[
-              { lang: "Python/Java", level: 85 },
-              { lang: "JavaScript/React", level: 80 },
-              { lang: "Computer Vision/OCR", level: 75 },
-              { lang: "Machine Learning", level: 70 },
-              { lang: "Web Development", level: 85 }
-            ].map((item) => (
-              <div key={item.lang} className="space-y-2">
-                <div className="flex justify-between font-mono text-sm">
-                  <span>{item.lang}</span>
-                  <span className="terminal-text">{item.level}%</span>
-                </div>
-                <div className="w-full bg-border h-3 border border-border">
-                  <div
-                    className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-1000 ease-out"
-                    style={{ width: `${item.level}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
