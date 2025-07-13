@@ -3,11 +3,7 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative p-6 bg-gradient-to-br from-background to-muted">
-      {/* Theme toggle in top right */}
-      <div className="absolute top-6 right-6">
-        <ThemeToggle />
-      </div>
+    <section id="hero" className="min-h-screen flex items-center justify-center relative p-6 bg-gradient-to-br from-background to-muted">
       
       <div className="max-w-4xl w-full text-center">
         <PixelAvatar />

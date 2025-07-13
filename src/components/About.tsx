@@ -9,7 +9,7 @@ const stats = [
 
 export function About() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-muted to-background">
+    <section id="about" className="py-20 px-6 bg-gradient-to-b from-muted to-background">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 font-mono">
           <span className="terminal-text">&gt;</span> ABOUT_ME
