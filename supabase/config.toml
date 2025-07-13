@@ -1,1 +1,4 @@
 project_id = "tnshgjpiewvhlnqfzqqa"
+
+[functions.chat-with-moe]
+verify_jwt = false
