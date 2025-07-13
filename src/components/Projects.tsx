@@ -27,15 +27,6 @@ const projects = [
     github: null,
     demo: null,
     status: "DEPLOYED"
-  },
-  {
-    title: "Club: We AutoPilot",
-    description: "Autonomous vehicle perception system using advanced computer vision. Implemented object detection, tracking, and real-time visualization with YOLO, OpenCV, and DeepSORT.",
-    tech: ["Python", "PyTorch", "OpenCV", "DeepSORT", "YOLO"],
-    icon: Car,
-    github: "#",
-    demo: "#",
-    status: "ACTIVE"
   }
 ];
 
