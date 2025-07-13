@@ -196,19 +196,21 @@ export function Contact() {
             <div className="pixel-card p-6 bg-card">
               <h3 className="text-xl font-bold font-mono mb-4">Connect</h3>
               <div className="space-y-3">
-                {contactLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    className="flex items-center gap-3 p-3 bg-muted hover:bg-background border border-border transition-colors group"
-                  >
-                    <link.icon className={`h-5 w-5 ${link.color} group-hover:scale-110 transition-transform`} />
-                    <div>
-                      <div className="font-mono text-sm font-bold">{link.name}</div>
-                      <div className="font-mono text-xs text-muted-foreground">{link.value}</div>
-                    </div>
-                  </a>
-                ))}
+                 {contactLinks.map((link) => (
+                   <a
+                     key={link.name}
+                     href={link.href}
+                     target={link.href.startsWith('http') ? "_blank" : undefined}
+                     rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                     className="flex items-center gap-3 p-3 bg-muted hover:bg-background border border-border transition-colors group"
+                   >
+                     <link.icon className={`h-5 w-5 ${link.color} group-hover:scale-110 transition-transform`} />
+                     <div>
+                       <div className="font-mono text-sm font-bold">{link.name}</div>
+                       <div className="font-mono text-xs text-muted-foreground">{link.value}</div>
+                     </div>
+                   </a>
+                 ))}
               </div>
             </div>
             
