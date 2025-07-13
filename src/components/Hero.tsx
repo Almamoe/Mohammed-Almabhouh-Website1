@@ -39,9 +39,13 @@ export function Hero() {
           >
             VIEW PROJECTS
           </a>
-          <button className="pixel-button bg-accent text-accent-foreground">
+          <a 
+            href="/lovable-uploads/9d88c1c0-af78-4615-a8b9-741b4263eeae.png"
+            download="Mohammed_Almabhouh_Resume.png"
+            className="pixel-button bg-accent text-accent-foreground"
+          >
             DOWNLOAD RESUME
-          </button>
+          </a>
         </div>
         
         {/* Decorative terminal prompt */}
