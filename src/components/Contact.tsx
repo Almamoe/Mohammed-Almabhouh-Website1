@@ -3,29 +3,29 @@ import { Mail, Github, Linkedin, Twitter, MapPin, Send } from "lucide-react";
 const contactLinks = [
   {
     name: "Email",
-    value: "alex.chen@example.com",
-    href: "mailto:alex.chen@example.com",
+    value: "almamolna664@gmail.com",
+    href: "mailto:almamolna664@gmail.com",
     icon: Mail,
     color: "text-accent"
   },
   {
     name: "GitHub",
-    value: "github.com/alexchen",
-    href: "https://github.com",
+    value: "github.com/Almamoe",
+    href: "https://github.com/Almamoe",
     icon: Github,
     color: "text-foreground"
   },
   {
     name: "LinkedIn",
-    value: "linkedin.com/in/alexchen",
-    href: "https://linkedin.com",
+    value: "linkedin.com/in/moe-alma",
+    href: "https://www.linkedin.com/in/moe-alma",
     icon: Linkedin,
     color: "text-primary"
   },
   {
-    name: "Twitter",
-    value: "@alexchen_dev",
-    href: "https://twitter.com",
+    name: "Phone",
+    value: "226-582-2375",
+    href: "tel:+12265822375",
     icon: Twitter,
     color: "text-retro-orange"
   }
@@ -105,9 +105,9 @@ export function Contact() {
                 Location
               </h3>
               <p className="text-muted-foreground font-mono">
-                San Francisco, CA
+                London, Ontario
                 <br />
-                Available for remote work worldwide
+                Available for remote work and on-site opportunities
               </p>
             </div>
             
@@ -155,7 +155,7 @@ export function Contact() {
         {/* Footer */}
         <div className="mt-16 text-center font-mono text-sm text-muted-foreground">
           <div className="pixel-card p-4 bg-card inline-block">
-            &copy; 2024 Alex Chen | Built with ❤️ and lots of ☕
+            &copy; 2024 Mohammed Almabhouh | Built with ❤️ and lots of ☕
             <br />
             <span className="terminal-text">while(alive) {`{ code(); }`}</span>
           </div>

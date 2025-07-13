@@ -1,10 +1,10 @@
 import { Coffee, Code, Heart, Zap } from "lucide-react";
 
 const stats = [
-  { label: "Years Experience", value: "5+", icon: Code },
-  { label: "Projects Completed", value: "50+", icon: Zap },
+  { label: "Years in Program", value: "2+", icon: Code },
+  { label: "Projects Built", value: "10+", icon: Zap },
   { label: "Cups of Coffee", value: "∞", icon: Coffee },
-  { label: "Lines of Code", value: "100K+", icon: Heart }
+  { label: "Lines of Code", value: "50K+", icon: Heart }
 ];
 
 export function About() {
@@ -24,35 +24,41 @@ export function About() {
               
               <div className="space-y-4 font-mono text-sm">
                 <div className="text-accent">
-                  <span className="text-muted-foreground"># About Alex Chen</span>
+                  <span className="text-muted-foreground"># About Mohammed Almabhouh</span>
                 </div>
                 
                 <div>
                   <span className="text-primary">name</span>
                   <span className="text-muted-foreground">=</span>
-                  <span className="text-accent">"Alex Chen"</span>
+                  <span className="text-accent">"Mohammed Almabhouh"</span>
                 </div>
                 
                 <div>
                   <span className="text-primary">role</span>
                   <span className="text-muted-foreground">=</span>
-                  <span className="text-accent">"Full-stack Developer"</span>
+                  <span className="text-accent">"Software Engineering Student"</span>
                 </div>
                 
                 <div>
                   <span className="text-primary">location</span>
                   <span className="text-muted-foreground">=</span>
-                  <span className="text-accent">"San Francisco, CA"</span>
+                  <span className="text-accent">"London, Ontario"</span>
                 </div>
                 
                 <div>
                   <span className="text-primary">education</span>
                   <span className="text-muted-foreground">=</span>
-                  <span className="text-accent">"BS Computer Science"</span>
+                  <span className="text-accent">"B.E.Sc Software Engineering - UWO"</span>
+                </div>
+                
+                <div>
+                  <span className="text-primary">graduation</span>
+                  <span className="text-muted-foreground">=</span>
+                  <span className="text-accent">"May 2027"</span>
                 </div>
                 
                 <div className="pt-4 border-t border-border">
-                  <span className="text-muted-foreground"># Passionate about</span>
+                  <span className="text-muted-foreground"># Current Focus</span>
                 </div>
                 
                 <div>
@@ -62,17 +68,17 @@ export function About() {
                 </div>
                 
                 <div className="ml-4 space-y-1">
-                  <div className="text-accent">"Clean Code Architecture"</div>
-                  <div className="text-accent">"Open Source Contributions"</div>
-                  <div className="text-accent">"Performance Optimization"</div>
-                  <div className="text-accent">"User Experience Design"</div>
+                  <div className="text-accent">"Machine Learning & Computer Vision"</div>
+                  <div className="text-accent">"Web Development & User Experience"</div>
+                  <div className="text-accent">"Autonomous Vehicle Systems"</div>
+                  <div className="text-accent">"Secure Software Development"</div>
                 </div>
                 
                 <div className="text-accent">)</div>
                 
                 <div className="pt-4">
                   <span className="text-muted-foreground">echo</span>
-                  <span className="text-accent"> "Building the future, one commit at a time"</span>
+                  <span className="text-accent"> "Building intelligent solutions for tomorrow"</span>
                 </div>
               </div>
             </div>
@@ -82,9 +88,9 @@ export function About() {
             <div className="pixel-card p-6 bg-card">
               <h3 className="text-xl font-bold font-mono mb-4">Current Focus</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm currently diving deep into modern web technologies and cloud architecture. 
-                My passion lies in creating scalable, user-friendly applications that solve real-world problems. 
-                When I'm not coding, you'll find me contributing to open source projects or exploring the latest in AI and machine learning.
+                Currently pursuing Software Engineering at University of Western Ontario while working as a Software Developer at Ameerz-Agent Proxy. 
+                My passion lies in machine learning, computer vision, and building secure, intelligent applications. 
+                I'm particularly interested in autonomous vehicle systems and developing innovative solutions for real-world challenges.
               </p>
             </div>
             
@@ -107,19 +113,19 @@ export function About() {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center">
                   <span className="text-accent mr-2">▶</span>
-                  Started coding at age 12 with BASIC
+                  Currently studying at University of Western Ontario
                 </li>
                 <li className="flex items-center">
                   <span className="text-accent mr-2">▶</span>
-                  Contributed to 20+ open source projects
+                  Working as Software Developer at Ameerz-Agent Proxy
                 </li>
                 <li className="flex items-center">
                   <span className="text-accent mr-2">▶</span>
-                  Speaks 3 programming languages fluently
+                  Passionate about autonomous vehicle systems
                 </li>
                 <li className="flex items-center">
                   <span className="text-accent mr-2">▶</span>
-                  Coffee-to-code ratio: 1:1000 lines
+                  Love building OCR and computer vision applications
                 </li>
               </ul>
             </div>

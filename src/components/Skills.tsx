@@ -2,39 +2,39 @@ import { Code, Database, Globe, Server, Smartphone, Terminal } from "lucide-reac
 
 const skillCategories = [
   {
-    title: "Frontend",
-    icon: Globe,
-    skills: ["React", "TypeScript", "Vue.js", "Tailwind CSS", "Next.js"],
+    title: "Languages",
+    icon: Code,
+    skills: ["Java", "Python", "JavaScript", "HTML/CSS", "C#"],
     color: "text-primary"
   },
   {
-    title: "Backend",
+    title: "Frameworks",
     icon: Server,
-    skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "GraphQL"],
+    skills: ["React", "Node.js", "PyTorch", "OpenCV", "DeepSORT"],
     color: "text-accent"
   },
   {
-    title: "DevOps",
+    title: "ML & AI",
     icon: Terminal,
-    skills: ["Docker", "AWS", "Git", "CI/CD", "Linux"],
+    skills: ["Computer Vision", "OCR", "Deep Learning", "TensorFlow", "YOLO"],
     color: "text-retro-orange"
   },
   {
-    title: "Mobile",
-    icon: Smartphone,
-    skills: ["React Native", "Flutter", "iOS", "Android"],
+    title: "Web Dev",
+    icon: Globe,
+    skills: ["WordPress", "SEO", "Responsive Design", "User Experience"],
     color: "text-primary"
   },
   {
-    title: "Database",
+    title: "Tools & OS",
     icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "Redis", "SQLite"],
+    skills: ["Git", "Linux", "SQLite", "Raspberry Pi", "3D Printing"],
     color: "text-accent"
   },
   {
-    title: "Languages",
-    icon: Code,
-    skills: ["JavaScript", "TypeScript", "Python", "Go", "Rust"],
+    title: "Security",
+    icon: Smartphone,
+    skills: ["Encryption", "AES-256", "PBKDF2", "Secure Vaults", "Authentication"],
     color: "text-retro-orange"
   }
 ];
@@ -95,11 +95,11 @@ export function Skills() {
           
           <div className="space-y-4">
             {[
-              { lang: "JavaScript/TypeScript", level: 95 },
-              { lang: "React/Next.js", level: 90 },
-              { lang: "Node.js/Python", level: 85 },
-              { lang: "Database Design", level: 80 },
-              { lang: "DevOps/Cloud", level: 75 }
+              { lang: "Python/Java", level: 85 },
+              { lang: "JavaScript/React", level: 80 },
+              { lang: "Computer Vision/OCR", level: 75 },
+              { lang: "Machine Learning", level: 70 },
+              { lang: "Web Development", level: 85 }
             ].map((item) => (
               <div key={item.lang} className="space-y-2">
                 <div className="flex justify-between font-mono text-sm">
