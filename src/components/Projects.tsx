@@ -65,14 +65,9 @@ export function Projects() {
               className="pixel-card p-6 hover:shadow-lg transition-all duration-300 group hover:-translate-y-2"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
-                  <project.icon className="h-6 w-6 text-primary mr-3" />
-                  <h3 className="text-xl font-bold font-mono">{project.title}</h3>
-                </div>
-                <span className={`px-2 py-1 text-xs font-mono border border-current ${statusColors[project.status as keyof typeof statusColors]}`}>
-                  {project.status.replace('_', ' ')}
-                </span>
+              <div className="flex items-center mb-4">
+                <project.icon className="h-6 w-6 text-primary mr-3" />
+                <h3 className="text-xl font-bold font-mono">{project.title}</h3>
               </div>
               
               <p className="text-muted-foreground mb-4 leading-relaxed">
