@@ -6,7 +6,13 @@ export function Hero() {
     <section id="hero" className="min-h-screen flex items-center justify-center relative p-6 bg-gradient-to-br from-background to-muted">
       
       <div className="max-w-4xl w-full text-center">
-        <PixelAvatar />
+        <div className="mb-8">
+          <img 
+            src="/lovable-uploads/19ae7988-e51a-4f09-969f-15de2937ac76.png" 
+            alt="Mohammed Almabhouh" 
+            className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full object-cover border-4 border-primary shadow-2xl"
+          />
+        </div>
         
         <h1 className="text-6xl md:text-8xl font-bold mb-4 glow-text">
           <span className="terminal-text">MOHAMMED</span>
