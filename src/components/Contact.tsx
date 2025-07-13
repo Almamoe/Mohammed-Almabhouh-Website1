@@ -1,4 +1,7 @@
 import { Mail, Github, Linkedin, Twitter, MapPin, Send } from "lucide-react";
+import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const contactLinks = [
   {
@@ -32,6 +35,68 @@ const contactLinks = [
 ];
 
 export function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all fields",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 px-6 bg-gradient-to-b from-background to-muted">
       <div className="max-w-4xl mx-auto">
@@ -50,13 +115,17 @@ export function Contact() {
               Send_Message()
             </h3>
             
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-mono mb-2">Name</label>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   className="pixel-input w-full"
                   placeholder="Enter your name..."
+                  required
                 />
               </div>
               
@@ -64,8 +133,12 @@ export function Contact() {
                 <label className="block text-sm font-mono mb-2">Email</label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   className="pixel-input w-full"
                   placeholder="your.email@example.com"
+                  required
                 />
               </div>
               
@@ -73,8 +146,12 @@ export function Contact() {
                 <label className="block text-sm font-mono mb-2">Subject</label>
                 <input
                   type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
                   className="pixel-input w-full"
                   placeholder="Project collaboration..."
+                  required
                 />
               </div>
               
@@ -82,17 +159,22 @@ export function Contact() {
                 <label className="block text-sm font-mono mb-2">Message</label>
                 <textarea
                   rows={6}
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   className="pixel-input w-full resize-none"
                   placeholder="Tell me about your project or idea..."
+                  required
                 />
               </div>
               
               <button
                 type="submit"
-                className="pixel-button bg-accent text-accent-foreground w-full flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className="pixel-button bg-accent text-accent-foreground w-full flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send className="h-4 w-4" />
-                SEND MESSAGE
+                {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
               </button>
             </form>
           </div>
