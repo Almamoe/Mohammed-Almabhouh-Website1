@@ -31,9 +31,14 @@ export function Hero() {
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="pixel-button bg-primary text-primary-foreground">
+          <a 
+            href="https://github.com/Almamoe" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="pixel-button bg-primary text-primary-foreground"
+          >
             VIEW PROJECTS
-          </button>
+          </a>
           <button className="pixel-button bg-accent text-accent-foreground">
             DOWNLOAD RESUME
           </button>
