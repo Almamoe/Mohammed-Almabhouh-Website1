@@ -1,5 +1,6 @@
 import { PixelAvatar } from "./PixelAvatar";
 import { ThemeToggle } from "./ThemeToggle";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -20,8 +21,37 @@ export function Hero() {
           <span className="text-primary">ALMABHOUH</span>
         </h1>
         
-        <div className="text-xl md:text-2xl font-mono mb-8 typewriter inline-block">
+        <div className="text-xl md:text-2xl font-mono mb-6 typewriter inline-block">
           SOFTWARE ENGINEER
+        </div>
+        
+        {/* Social Media Icons */}
+        <div className="flex justify-center gap-6 mb-8">
+          <a 
+            href="mailto:almamolna664@gmail.com"
+            className="p-3 bg-card hover:bg-accent border border-border hover:border-accent transition-all duration-300 hover:scale-110 pixel-card"
+            aria-label="Email"
+          >
+            <Mail className="h-6 w-6 text-foreground hover:text-accent-foreground" />
+          </a>
+          <a 
+            href="https://github.com/Almamoe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-card hover:bg-accent border border-border hover:border-accent transition-all duration-300 hover:scale-110 pixel-card"
+            aria-label="GitHub"
+          >
+            <Github className="h-6 w-6 text-foreground hover:text-accent-foreground" />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/moe-alma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-card hover:bg-accent border border-border hover:border-accent transition-all duration-300 hover:scale-110 pixel-card"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-6 w-6 text-foreground hover:text-accent-foreground" />
+          </a>
         </div>
         
         <p className="text-lg md:text-xl text-muted-foreground font-mono mb-8 max-w-2xl mx-auto">
