@@ -239,9 +239,7 @@ export function Contact() {
         {/* Footer */}
         <div className="mt-16 text-center font-mono text-sm text-muted-foreground">
           <div className="pixel-card p-4 bg-card inline-block">
-            &copy; 2024 Mohammed Almabhouh | Built with ❤️ and lots of ☕
-            <br />
-            <span className="terminal-text">while(alive) {`{ code(); }`}</span>
+            &copy; 2025 Mohammed Almabhouh
           </div>
         </div>
       </div>
