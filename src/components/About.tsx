@@ -88,7 +88,7 @@ export function About() {
             <div className="pixel-card p-6 bg-card">
               <h3 className="text-xl font-bold font-mono mb-4">Current Focus</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Currently pursuing Software Engineering at University of Western Ontario while working as a Software Developer at Ameerz-Agent Proxy. 
+                Currently pursuing Software Engineering at University of Western Ontario . 
                 My passion lies in machine learning, computer vision, and building secure, intelligent applications. 
                 I'm particularly interested in autonomous vehicle systems and developing innovative solutions for real-world challenges.
               </p>
