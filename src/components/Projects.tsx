@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Shield, Camera, Car, Gamepad2, Leaf } from "lucide-react";
+import { ExternalLink, Github, Shield, Camera, Car, Gamepad2, Leaf, Truck } from "lucide-react";
 
 const projects = [
   {
@@ -34,6 +34,15 @@ const projects = [
     tech: ["React", "Express.js", "PostgreSQL", "OpenAI API", "JWT"],
     icon: Leaf,
     github: "https://github.com/Almamoe/Carbon-eMission",
+    demo: "#",
+    status: "COMPLETED"
+  },
+  {
+    title: "FleetCheck London Parks",
+    description: "Full-stack vehicle inspection management system with driver workflow automation and supervisor oversight. Features real-time notifications, digital signatures, PDF generation, and offline functionality with mobile-first design.",
+    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Zod"],
+    icon: Truck,
+    github: "https://github.com/Almamoe/fleetcheck-london-parks",
     demo: "#",
     status: "COMPLETED"
   }
