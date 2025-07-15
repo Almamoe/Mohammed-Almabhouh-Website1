@@ -55,7 +55,7 @@ export function Projects() {
         </h2>
         
         <p className="text-center text-muted-foreground font-mono mb-12 text-lg">
-          Featured projects spanning machine learning, security, and web development
+          Featured projects spanning AI, security, and full-stack development
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

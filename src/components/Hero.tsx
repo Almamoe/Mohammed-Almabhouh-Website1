@@ -57,7 +57,7 @@ export function Hero() {
         <p className="text-lg md:text-xl text-muted-foreground font-mono mb-8 max-w-2xl mx-auto">
           &gt; Software Engineering student at University of Western Ontario
           <br />
-          &gt; Specializing in Python, JavaScript, and machine learning applications
+          &gt; Specializing in Python, JavaScript, and AI-powered applications
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center">

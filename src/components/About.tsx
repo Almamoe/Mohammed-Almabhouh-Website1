@@ -61,9 +61,9 @@ export function About() {
                 </div>
                 
                 <div className="ml-4 space-y-1">
-                  <div className="text-accent">"Machine Learning & Computer Vision"</div>
+                  <div className="text-accent">"AI & Software Development"</div>
                   <div className="text-accent">"Web Development & User Experience"</div>
-                  <div className="text-accent">"Autonomous Vehicle Systems"</div>
+                  <div className="text-accent">"Cloud Computing & DevOps"</div>
                   <div className="text-accent">"Secure Software Development"</div>
                 </div>
                 
@@ -82,8 +82,8 @@ export function About() {
               <h3 className="text-xl font-bold font-mono mb-4">Current Focus</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Currently pursuing Software Engineering at University of Western Ontario. 
-                My passion lies in machine learning, computer vision, and building secure, intelligent applications. 
-                I'm particularly interested in autonomous vehicle systems and developing innovative solutions for real-world challenges.
+                My passion lies in artificial intelligence, full-stack development, and building scalable, secure applications. 
+                I'm particularly interested in modern software architecture and developing innovative solutions for real-world challenges.
               </p>
             </div>
             
@@ -100,11 +100,11 @@ export function About() {
                 </li>
                 <li className="flex items-center">
                   <span className="text-accent mr-2">▶</span>
-                  Passionate about autonomous vehicle systems
+                  Passionate about AI and software architecture
                 </li>
                 <li className="flex items-center">
                   <span className="text-accent mr-2">▶</span>
-                  Love building OCR and computer vision applications
+                  Love building full-stack applications and APIs
                 </li>
               </ul>
             </div>
