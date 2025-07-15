@@ -25,20 +25,20 @@ export function Resume() {
                   <button className="pixel-button bg-accent text-accent-foreground p-2">
                     <Eye className="h-4 w-4" />
                   </button>
-                  <a
-                    href="/lovable-uploads/7a5b4192-b3ab-4681-aebc-a67e8b7b4eea.png"
-                    download="Mohammed_Almabhouh_Resume.png"
-                    className="pixel-button bg-primary text-primary-foreground p-2"
-                  >
-                    <Download className="h-4 w-4" />
-                  </a>
+                <a
+                  href="/lovable-uploads/b641a349-3d6a-404b-ac31-ac084373b3c2.png"
+                  download="Mohammed_Almabhouh_Resume.pdf"
+                  className="pixel-button bg-primary text-primary-foreground p-2"
+                >
+                  <Download className="h-4 w-4" />
+                </a>
                 </div>
               </div>
               
               {/* Resume image display */}
               <div className="border border-border bg-background p-4 overflow-auto">
                 <img
-                  src="/lovable-uploads/7a5b4192-b3ab-4681-aebc-a67e8b7b4eea.png"
+                  src="/lovable-uploads/b641a349-3d6a-404b-ac31-ac084373b3c2.png"
                   alt="Mohammed Almabhouh Resume"
                   className="w-full max-w-full h-auto"
                 />
@@ -113,15 +113,15 @@ export function Resume() {
               <h3 className="text-lg font-bold font-mono mb-4 terminal-text">Download Options</h3>
               <div className="space-y-3">
                 <a
-                  href="/lovable-uploads/7a5b4192-b3ab-4681-aebc-a67e8b7b4eea.png"
-                  download="Mohammed_Almabhouh_Resume.png"
+                  href="/lovable-uploads/b641a349-3d6a-404b-ac31-ac084373b3c2.png"
+                  download="Mohammed_Almabhouh_Resume.pdf"
                   className="pixel-button bg-primary text-primary-foreground w-full flex items-center justify-center gap-2"
                 >
                   <Download className="h-4 w-4" />
                   DOWNLOAD RESUME
                 </a>
                 <p className="text-xs text-muted-foreground text-center">
-                  Last updated: Dec 2024
+                  Last updated: Jan 2025
                 </p>
               </div>
             </div>
