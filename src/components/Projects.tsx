@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Shield, Camera, Car, Gamepad2 } from "lucide-react";
+import { ExternalLink, Github, Shield, Camera, Car, Gamepad2, Leaf } from "lucide-react";
 
 const projects = [
   {
@@ -27,6 +27,15 @@ const projects = [
     github: null,
     demo: null,
     status: "DEPLOYED"
+  },
+  {
+    title: "Carbon eMission",
+    description: "Carbon footprint tracking application with personalized insights and competitive leaderboard. Features real-time calculations, AI-powered recommendations, and gamification to encourage eco-friendly behavior.",
+    tech: ["React", "Express.js", "PostgreSQL", "OpenAI API", "JWT"],
+    icon: Leaf,
+    github: "https://github.com/Almamoe/Carbon-eMission",
+    demo: "#",
+    status: "COMPLETED"
   }
 ];
 
